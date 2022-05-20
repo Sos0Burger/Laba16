@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Convert<String> fg;
+        Convert<Calculation> fg;
         fg = (s)->System.out.println(new AnotherCalculation(s.a,s.b,s.c).calc());
         Calculation c = new Calculation(5,2,5);
         fg.conv(c);
@@ -38,5 +38,5 @@ class AnotherCalculation{
     }
 }
 interface Convert<T>{
-    void conv(Calculation s);
+    void conv(T s);
 }
